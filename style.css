@@ -24,7 +24,6 @@
 
       #clickButton {
         padding:3rem;
-	
 	text-align: center;
         font-size: 16px;
         cursor: pointer;
@@ -34,11 +33,15 @@
       .result {
 	display: none;
 	z-index: 1;
-	margin:0 auto;
+	margin:1rem auto;
 	border: 3px solid black;
-	width: 300px;
-	padding: 2rem;
+	width: 400px;
+	padding: 1rem;
 	text-align: center;
+      }
+      .result h5{
+	font-size: 1rem;
+	margin-bottom: 5px;
       }
       .result img {
 	width: 150px;
@@ -48,4 +51,15 @@
 	margin-top: 1rem;
 	padding: 10px;
 	cursor: pointer;
+      }
+      .fact {
+	border: 2px dashed grey;
+      }
+      .footer img{
+	width: 50px;
+	height: 60px;
+	margin-top: 10px;
+      }
+      .footer {
+	padding: 1rem;
       }

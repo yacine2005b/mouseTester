@@ -35,11 +35,14 @@ function updateTimer() {
 }
 
 function endTest() {
+	const result = document.querySelector('.result')
+	const resultText = document.querySelector('.result h5')
+	const resultdesc = document.querySelector('.result h3')
+	const main = document.querySelector('.idk')
+	var cps = clickCount / 5
 	clearInterval(timerInterval);
 	canClick = false
-	const result = document.querySelector('.result')
-	const resultText = document.querySelector('.result p')
-	const main = document.querySelector('.idk')
+
 	main.style.display = 'none'
 
 	resultText.innerHTML = 'u clicked ' + clickCount + " times " + " in 5 seconds"
@@ -48,17 +51,21 @@ function endTest() {
 	if (clickCount < 15) {
 
 		resutlTitle.textContent = 'you are a turtle'
+		resultdesc.textContent = ' u clicked with the speed of ' + cps + " CPS"
 		resultImg.src = "/imgs/turtle.png"
 	}
 	else if (clickCount > 15 && clickCount <= 35) {
-
+		resultdesc.textContent = ' u clicked with the speed of ' + cps + " CPS"
 		resutlTitle.textContent = 'you are an octopus'
 		resultImg.src = "/imgs/octopus.jfif"
+		document.querySelector('#octopus').style.display = 'none'
 	}
 	else if (clickCount > 35 && clickCount < 60) {
-
+		resultdesc.textContent = ' u clicked with the speed of ' + cps + " CPS"
 		resutlTitle.textContent = 'you are a cheetah'
 		resultImg.src = "/imgs/cheetah.jfif"
+		document.querySelector('#octopus').style.display = 'none'
+		document.querySelector('#cheetah').style.display = 'none'
 	}
 }
 
