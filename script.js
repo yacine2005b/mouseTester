@@ -52,18 +52,18 @@ function endTest() {
 
 		resutlTitle.textContent = 'you are a turtle'
 		resultdesc.textContent = ' u clicked with the speed of ' + cps + " CPS"
-		resultImg.src = "/imgs/turtle.png"
+		resultImg.src = "imgs/turtle.png"
 	}
 	else if (clickCount > 15 && clickCount <= 35) {
 		resultdesc.textContent = ' u clicked with the speed of ' + cps + " CPS"
 		resutlTitle.textContent = 'you are an octopus'
-		resultImg.src = "/imgs/octopus.jfif"
+		resultImg.src = "imgs/octopus.jfif"
 		document.querySelector('#octopus').style.display = 'none'
 	}
 	else if (clickCount > 35 && clickCount < 60) {
 		resultdesc.textContent = ' u clicked with the speed of ' + cps + " CPS"
 		resutlTitle.textContent = 'you are a cheetah'
-		resultImg.src = "/imgs/cheetah.jfif"
+		resultImg.src = "imgs/cheetah.jfif"
 		document.querySelector('#octopus').style.display = 'none'
 		document.querySelector('#cheetah').style.display = 'none'
 	}
